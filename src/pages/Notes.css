@@ -597,3 +597,33 @@ ion-fab-button {
 .notes-grid > *:nth-child(4) { animation-delay: 0.2s; }
 .notes-grid > *:nth-child(5) { animation-delay: 0.25s; }
 .notes-grid > *:nth-child(6) { animation-delay: 0.3s; }
+
+/* Text Color Overrides */
+.note-text,
+.note-item,
+ion-label .note-text,
+ion-card .note-text,
+.note-card * {
+  color: #000 !important;
+  opacity: 1 !important;
+  font-weight: 500 !important;
+  -webkit-text-fill-color: #000 !important; /* webkit browsers */
+  text-shadow: none !important;
+}
+
+/* đảm bảo các component Ionic dùng biến màu đen */
+ion-label,
+ion-item,
+ion-card {
+  --color: #000 !important;
+  color: #000 !important;
+}
+
+/* input/textarea cũng ép chữ đen */
+textarea,
+ion-textarea,
+.input-note {
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
+  opacity: 1 !important;
+}
