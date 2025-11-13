@@ -1,0 +1,107 @@
+.notes-container {
+  padding: 16px;
+  padding-bottom: 80px;
+}
+
+.add-note-card {
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.add-note-card h3 {
+  margin: 0 0 16px 0;
+  color: var(--ion-color-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.input-item {
+  --background: var(--ion-color-light);
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.add-button {
+  margin-top: 8px;
+  --border-radius: 8px;
+}
+
+.notes-list-section {
+  margin-top: 8px;
+}
+
+.section-title {
+  margin: 0 0 16px 0;
+  padding: 0 8px;
+  color: var(--ion-color-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  background: var(--ion-color-light);
+}
+
+.empty-icon {
+  font-size: 64px;
+  color: var(--ion-color-medium);
+  margin-bottom: 16px;
+}
+
+.empty-state p {
+  margin: 4px 0;
+  font-size: 16px;
+}
+
+.note-item {
+  --padding-start: 16px;
+  --inner-padding-end: 16px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  --background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.note-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.note-number {
+  background: var(--ion-color-primary);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  min-width: 40px;
+  text-align: center;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.note-content p {
+  margin: 8px 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--ion-color-dark);
+  word-wrap: break-word;
+  flex: 1;
+}
+
+ion-item-sliding {
+  margin-bottom: 8px;
+}
+
+ion-item-option {
+  font-weight: 600;
+}

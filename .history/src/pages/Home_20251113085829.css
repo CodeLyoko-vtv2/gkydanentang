@@ -1,0 +1,53 @@
+.home-container {
+  padding: 0;
+}
+
+.welcome-section {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, var(--ion-color-primary) 0%, var(--ion-color-secondary) 100%);
+  color: white;
+  margin-bottom: 20px;
+}
+
+.welcome-icon {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+.welcome-section h2 {
+  margin: 10px 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.welcome-section p {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+ion-list {
+  padding: 0 16px;
+}
+
+ion-item {
+  --padding-start: 16px;
+  --inner-padding-end: 16px;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  --background: var(--ion-color-light);
+}
+
+ion-item h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ion-color-dark);
+  margin: 8px 0 4px 0;
+}
+
+ion-item p {
+  font-size: 14px;
+  color: var(--ion-color-medium);
+  margin: 0 0 8px 0;
+}

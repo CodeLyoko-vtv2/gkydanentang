@@ -1,0 +1,168 @@
+.notes-container {
+  padding: 16px;
+  padding-bottom: 80px;
+}
+
+.add-note-card {
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.add-note-card h3 {
+  margin: 0 0 16px 0;
+  color: var(--ion-color-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.input-item {
+  --background: var(--ion-color-light);
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.add-button {
+  margin-top: 8px;
+  --border-radius: 8px;
+}
+
+.notes-list-section {
+  margin-top: 8px;
+}
+
+.section-title {
+  margin: 0 0 16px 0;
+  padding: 0 8px;
+  color: var(--ion-color-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  background: var(--ion-color-light);
+}
+
+.empty-icon {
+  font-size: 64px;
+  color: var(--ion-color-medium);
+  margin-bottom: 16px;
+}
+
+.empty-state p {
+  margin: 4px 0;
+  font-size: 16px;
+}
+
+.note-item {
+  --padding-start: 16px;
+  --inner-padding-end: 16px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  --background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.note-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.note-number {
+  background: linear-gradient(135deg, var(--ion-color-primary) 0%, var(--ion-color-primary-shade) 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 700;
+  min-width: 42px;
+  text-align: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+  box-shadow: 0 2px 4px rgba(56, 128, 255, 0.3);
+  letter-spacing: 0.5px;
+}
+
+/* Responsive cho mobile nhỏ */
+@media (max-width: 360px) {
+  .note-number {
+    font-size: 11px;
+    padding: 4px 8px;
+    min-width: 36px;
+    border-radius: 14px;
+  }
+}
+
+/* Tối ưu cho tablet */
+@media (min-width: 768px) {
+  .note-number {
+    font-size: 14px;
+    padding: 8px 14px;
+    min-width: 48px;
+    border-radius: 18px;
+  }
+}
+
+/* Tối ưu cho desktop */
+@media (min-width: 1024px) {
+  .note-number {
+    font-size: 15px;
+    padding: 8px 16px;
+    min-width: 52px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .note-item:hover .note-number {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(56, 128, 255, 0.4);
+  }
+}
+
+.note-content p {
+  margin: 8px 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ion-color-dark);
+  word-wrap: break-word;
+  word-break: break-word;
+  flex: 1;
+}
+
+/* Responsive text size */
+@media (max-width: 360px) {
+  .note-content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 768px) {
+  .note-content p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}
+
+@media (min-width: 1024px) {
+  .note-content p {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+}
+
+ion-item-sliding {
+  margin-bottom: 8px;
+}
+
+ion-item-option {
+  font-weight: 600;
+}
